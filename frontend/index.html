@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Network Security Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Network Security Scanner & Firewall Visualizer</h1>
+
+<div class="box">
+    <h2>Run Network Scan</h2>
+    <input id="ip" placeholder="Enter IP (e.g. 192.168.1.1)">
+    <select id="scanType">
+        <option value="syn">TCP SYN Scan</option>
+        <option value="udp">UDP Scan</option>
+        <option value="full">Full Connect Scan</option>
+    </select>
+    <button onclick="runScan()">Scan</button>
+</div>
+
+<div class="box">
+    <h2>Scan Results</h2>
+    <table id="resultsTable"></table>
+</div>
+
+<div class="box">
+    <h2>Create Firewall Rule</h2>
+    <select id="fwAction">
+        <option value="allow">ALLOW</option>
+        <option value="deny">DENY</option>
+    </select>
+    <input id="fwIP" placeholder="IP or 'any'">
+    <input id="fwPort" placeholder="Port or blank">
+    <input id="fwProtocol" placeholder="tcp/udp/any">
+    <button onclick="addRule()">Add Rule</button>
+</div>
+
+<div class="box">
+    <h2>Firewall Rules</h2>
+    <ul id="ruleList"></ul>
+</div>
+
+<div class="box">
+    <h2>Traffic Simulation</h2>
+    <input id="tIP" placeholder="Target IP">
+    <input id="tPort" placeholder="Port">
+    <input id="tProto" placeholder="Protocol">
+    <button onclick="simulateTraffic()">Simulate</button>
+    <p id="trafficResult"></p>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
 
