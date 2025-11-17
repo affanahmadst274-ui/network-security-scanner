@@ -1,4 +1,4 @@
-const API = "https://networkscanner-production.up.railway.app";
+const API = "network-security-scanner-production.up.railway.app";
 
 
 async function runScan() {
