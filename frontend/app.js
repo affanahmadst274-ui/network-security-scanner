@@ -1,4 +1,4 @@
-const API = "http://localhost:8000";
+const API = "https://yourbackend.onrender.com";
 
 async function runScan() {
     const ip = document.getElementById("ip").value;
