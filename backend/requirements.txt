@@ -1,1 +1,10 @@
 
+fastapi
+uvicorn
+python-nmap
+scapy
+pydantic
+requests
+jinja2
+aiofiles
+python-dotenv
