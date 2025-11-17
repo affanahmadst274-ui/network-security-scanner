@@ -1,4 +1,5 @@
-const API = "https://yourbackend.onrender.com";
+const API = "https://networkscanner-production.up.railway.app";
+
 
 async function runScan() {
     const ip = document.getElementById("ip").value;
